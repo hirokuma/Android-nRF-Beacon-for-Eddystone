@@ -4,14 +4,14 @@ nRF Beacon for Eddystone is an application that supports the new Eddystone GATT 
 ## Features
 The basic features of the application includes
 
--Foreground and background scanning of beacons using Nearby API which are registered on the Proximity API. Once an EID beacon is registered to the cloud with an attachment, the Nearby API will send the beacon EID packet to the proximity API, resolves the EID packet and retrieves the data attached to it.
+- Foreground and background scanning of beacons using Nearby API which are registered on the Proximity API. Once an EID beacon is registered to the cloud with an attachment, the Nearby API will send the beacon EID packet to the proximity API, resolves the EID packet and retrieves the data attached to it.
  Please note only UID and EID beacon types can be registered on the proximity API
  
--Registering beacons and creating attachments to proximity API
+- Registering beacons and creating attachments to proximity API
 
--Configuration of Eddystone beacons using the new Eddystone GATT configuration service.
+- Configuration of Eddystone beacons using the new Eddystone GATT configuration service.
 
--URL shortener  for configuring URL beacons
+- URL shortener  for configuring URL beacons
 
 ## How to Guide
 1. First press the button 1 on the nRF52 Devkit which turns the devkit/beacon in to connectable mode for 60 seconds
@@ -28,24 +28,25 @@ The nRF Beacon for Eddystone application is available on Playstore on the follow
 https://play.google.com/store/apps/details?id=no.nordicsemi.android.nrfbeacon.nearby 
 
 ## Setting up the project
--Two important steps would be to enable the Nearby API, the Proximity API and URL Shortener API from the Google developer console's api manager.
+Two important steps would be to enable the Nearby API, the Proximity API and URL Shortener API from the Google developer console's api manager.
 
--Generate an API Key for android by clicking in credentials 
+- Generate an API Key for android by clicking in credentials 
 
--Next using the debug keystore retreive the SHA1 Key and enter it with your project package name
+- Next: using the debug keystore retreive the SHA1 Key and enter it with your project package name
 
--Next Generate an OAuth 2.0 Client for android and follow the same step as above by entering the SHA1 and the package name
+- Next: Generate an OAuth 2.0 Client for android and follow the same step as above by entering the SHA1 and the package name
 
-Make sure to enter the API Key in the manifest file
+- Make sure to enter the API Key in the manifest file
 
 Follow the full instructions from the google documentation  https://developers.google.com/beacons/get-started#obtain_and_provision_beacons
 
 ### Note:
 
--Android 4.3 or newer is required.
+- Android 4.3 or newer is required.
 
--Tested on Samsung S3 with Android 4.3, on Nexus 5, 6 and 9 with lollipop & Marshmallow and Samsung Galaxy S6, S7 with Marshmallow.
+- Tested on Samsung S3 with Android 4.3, on Nexus 5, 6 and 9 with lollipop & Marshmallow and Samsung Galaxy S6, S7 with Marshmallow.
 
--Location Services need to be enabled for scanning on android 6.0 Marshmallow requesting a runtime persmission ACCESS_COARSE_LOCATION
+- Location Services need to be enabled for scanning on android 6.0 Marshmallow requesting a runtime persmission ACCESS_COARSE_LOCATION
 
--GET_ACCOUNTS permission is required in order to select the account to register and allow access to the Google Proximity API and URL Shortener API.
+- GET_ACCOUNTS permission is required in order to select the account to register and allow access to the Google Proximity API and URL Shortener API.
+
