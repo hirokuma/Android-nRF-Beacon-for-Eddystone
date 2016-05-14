@@ -246,14 +246,14 @@ public class BeaconsFragment extends BaseFragment implements GoogleApiClient.Con
     }
 
     private void createShowcaseForNearbySettings(){
-        if(((MainActivity)mContext).getTabPosition() == 0)
-            new MaterialShowcaseView.Builder(getActivity())
-                    .setTarget(mNearbySettings)
-                    .setDismissText(getString(R.string.got_it))
-                    .setContentText(getString(R.string.nearby_Settings_showcase))
-                    .setDelay(1000)
-                    .singleUse(NEARBY_SETTINGS_HELP)
-                    .show();
+//        if(((MainActivity)mContext).getTabPosition() == 0)
+//            new MaterialShowcaseView.Builder(getActivity())
+//                    .setTarget(mNearbySettings)
+//                    .setDismissText(getString(R.string.got_it))
+//                    .setContentText(getString(R.string.nearby_Settings_showcase))
+//                    .setDelay(1000)
+//                    .singleUse(NEARBY_SETTINGS_HELP)
+//                    .show();
     }
 
     @Override
