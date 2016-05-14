@@ -1075,7 +1075,7 @@ public class UpdateFragment extends BaseFragment implements ScannerFragmentListe
                     getString(R.string.clear_slot_showcase), getString(R.string.got_it));
             sequence.addSequenceItem(mRefreshActiveSlot,
                     getString(R.string.refresh_slot_showcase), getString(R.string.got_it));
-            sequence.start();
+            //sequence.start();
         }
 
     }
