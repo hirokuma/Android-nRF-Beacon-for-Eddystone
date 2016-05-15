@@ -233,8 +233,10 @@ public class UpdateService extends Service {
 
         @Override
         public void onCharacteristicWrite(final BluetoothGatt gatt, final BluetoothGattCharacteristic characteristic, final int status) {
+            Log.v("BEACON", "Characteristic write : " + status + "[" + characteristic.getUuid().toString() + "]");
+
             if (status != BluetoothGatt.GATT_SUCCESS) {
-                Log.v("BEACON", "Characteristic write error: " + status + "[" + characteristic.getUuid().toString() + "]");
+                Log.v("BEACON", "Characteristic write error");
                 broadcastError(status);
                 return;
             }
@@ -273,8 +275,10 @@ public class UpdateService extends Service {
 
         @Override
         public void onCharacteristicRead(final BluetoothGatt gatt, final BluetoothGattCharacteristic characteristic, final int status) {
+            logw("Characteristic read : " + status + "[" + characteristic.getUuid().toString() + "]");
+
             if (status != BluetoothGatt.GATT_SUCCESS) {
-                logw("Characteristic read error: " + status + "[" + characteristic.getUuid().toString() + "]");
+                logw("Characteristic read error");
                 broadcastError(status);
                 return;
             }
